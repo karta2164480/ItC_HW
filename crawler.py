@@ -1,4 +1,5 @@
-
+import requests
+from lxml import etree
 
 
 class Crawler(object):
