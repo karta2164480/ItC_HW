@@ -1,3 +1,4 @@
-#ItC-python-hw-sample-code
+ # ItC-python-hw(crawler)-code #
 
-TA sample codes for Introduction to Computer
+Crawler is difficult.
+Let me edit this README.md
