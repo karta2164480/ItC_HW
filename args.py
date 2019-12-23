@@ -12,8 +12,8 @@ def get_args():
     args = parser.parse_args()
     args.start_date = datetime.strptime(args.start_date, '%Y-%m-%d')
     args.end_date = datetime.strptime(args.end_date, '%Y-%m-%d')
-    if start_date > end_date:
-    	datetime temp = start_date
-    	start_date = end_date
-    	end_date = temp
+    if args.start_date > args.end_date:
+    	temp = args.start_date
+    	args.start_date = args.end_date
+    	args.end_date = temp
     return args
