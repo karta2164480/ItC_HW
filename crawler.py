@@ -47,6 +47,7 @@ class Crawler(object):
 
 	def crawl_content(self, url):
 		res = requests.get(url,headers={'Accept-Language':'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-CN;q=0.6'}).content.decode()
+		sleep(0.1)
 		parser = etree.HTML(res)
 		xpath = '/html/body/div[1]/div/div[2]/div/div/div[2]/div/div[2]/text()'
 		content = parser.xpath(xpath)
